@@ -15,11 +15,11 @@ function Nav() {
           ["/expolre", "Explore"],
           ["/about", "About"],
         ].map(([url, name]) => (
-          <>
-            <Link href={url} key={name}>
-              <a>{name} </a>
+          <div key={name}>
+            <Link href={url}>
+              <a>{name}</a>
             </Link>
-          </>
+          </div>
         ))}
       </div>
     </div>
