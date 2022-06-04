@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../components/nav/Nav";
+import Nav from "../components/globals/Nav";
 
 function about() {
   return (
