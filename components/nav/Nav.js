@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 function Nav() {
   const router = useRouter();
   return (
-    <div className="text-3xl flex justify-between">
+    <div className="text-3xl flex justify-between bg-white fixed top-0 left-0 w-full">
       <Link href="/">
         <a className="text-slate-700 p-2">APIX</a>
       </Link>
