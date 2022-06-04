@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 function Nav() {
   const router = useRouter();
   return (
-    <div className="text-3xl flex justify-between items-center">
+    <div className="text-3xl flex justify-between">
       <Link href="/">
         <a className="text-slate-700 p-2">APIX</a>
       </Link>
-      <div className="flex gap-4 justify-between items-center text-2xl">
+      <div className="flex justify-between text-2xl p-0">
         {[
           ["/", "Home"],
           ["/explore", "Explore"],
@@ -18,9 +18,10 @@ function Nav() {
           <div
             key={name}
             className={
-              router.asPath === url
-                ? "bg-slate-800 text-slate-100 p-2"
-                : " text-slate-800 p-2"
+              "transition-all py-2 px-6 " +
+              (router.asPath === url
+                ? "bg-slate-800 text-slate-100"
+                : " text-slate-800")
             }
           >
             <Link href={url}>
