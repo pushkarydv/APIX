@@ -11,7 +11,7 @@ function HomePage() {
           Build Next Gen Apps with these Api{"'"}s
         </div>
         <Link href="/explore">
-          <a className="before-box py-4 bg-purple-700 text-slate-200 px-6 text-4xl  before:bg-purple-500">
+          <a className="transition before-box py-2 rounded-2xl bg-purple-700 text-slate-200 px-6 text-4xl  outline outline-4 outline-purple-400 hover:bg-purple-600 focus:scale-90">
             Explore
           </a>
         </Link>
@@ -19,19 +19,8 @@ function HomePage() {
       <style jsx>
         {`
           .home {
-            background: url("data:image/svg+xml;utf8,${Map}) center center fixed no-repeat;
+            background: url("/assets/map.svg") center center fixed no-repeat;
             background-size: contain;
-          }
-          .before-box {
-            position: relative;
-            z-index: 10;
-          }
-          .before-box:before {
-            content: "";
-            position: absolute;
-            z-index: 5;
-            width: 100%;
-            height: 100%;
           }
         `}
       </style>
