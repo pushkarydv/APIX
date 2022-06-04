@@ -20,8 +20,8 @@ function Nav() {
             className={
               "transition-all py-2 px-6 " +
               (router.asPath === url
-                ? "bg-slate-800 text-slate-100"
-                : " text-slate-800")
+                ? "bg-purple-700 text-slate-100"
+                : " text-purple-900 ")
             }
           >
             <Link href={url}>
