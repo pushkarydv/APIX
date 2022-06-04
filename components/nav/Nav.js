@@ -12,7 +12,7 @@ function Nav() {
       <div className="flex gap-4 justify-between items-center text-2xl">
         {[
           ["/", "Home"],
-          ["/expolre", "Explore"],
+          ["/explore", "Explore"],
           ["/about", "About"],
         ].map(([url, name]) => (
           <div key={name}>
