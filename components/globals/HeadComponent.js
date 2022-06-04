@@ -3,7 +3,7 @@ import React from "react";
 function HeadComponent({ title }) {
   return (
     <div>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <title>{title}</title>
       <meta name="title" content="APIX" />
       <meta
