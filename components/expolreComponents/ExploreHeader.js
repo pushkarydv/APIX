@@ -1,6 +1,6 @@
 import React from "react";
 import ApiBoxConatiner from "./ApiBoxConatiner";
-import { Apis } from "../list/Apis";
+import Apis from "../list/Apis";
 function ExploreHeader() {
   return (
     <>
