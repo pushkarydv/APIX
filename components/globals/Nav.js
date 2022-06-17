@@ -13,7 +13,6 @@ function Nav() {
         {[
           ["/", "Home"],
           ["/explore", "Explore"],
-          ["/about", "About"],
         ].map(([url, name]) => (
           <div
             key={name}
