@@ -42,19 +42,20 @@ function HeadComponent({ title }) {
       />
       <link rel="icon" href="/logo.png" />
       {/* Google analitics */}
-      <Script
+      <script
+        async
         src="https://www.googletagmanager.com/gtag/js?id=G-7NHHPDZLXM"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-          gtag('config', 'G-7NHHPDZLXM');
-        `}
-      </Script>
+  gtag('config', 'G-7NHHPDZLXM',{ page_path: window.location.pathname });`,
+        }}
+      />
     </>
   );
 }
