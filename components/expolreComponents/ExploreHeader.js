@@ -1,6 +1,6 @@
 import React from "react";
 import ApiBoxConatiner from "./ApiBoxConatiner";
-import Apis from "../list/Apis";
+import { Apis } from "../list/Apis";
 function ExploreHeader() {
   return (
     <>
@@ -14,8 +14,8 @@ function ExploreHeader() {
           Cateogories
         </div>
         <div className="w-[90%] md:w-[60%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%] mt-0 mx-auto">
-          {Apis.map((api) => (
-            <ApiBoxConatiner key={api} text={api} />
+          {Apis.map(([name, url]) => (
+            <ApiBoxConatiner key={url} text={name} url={url} />
           ))}
         </div>
       </div>
