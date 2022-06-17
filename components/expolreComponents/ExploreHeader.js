@@ -18,6 +18,23 @@ function ExploreHeader() {
             <ApiBoxConatiner key={url} text={name} url={url} />
           ))}
         </div>
+        <div className="text-xl my-12 md:w-[60%]">
+          this website is open source and you can find code of this website on
+          GitHub. You can request a feature, contribute to project by adding
+          feedbacks and mentioning bugs if they exist. Licensed under GPL-3.0
+          ©pushkarydv. <br />
+          <p className="text-center mt-6">
+            You can give a star if you like this project -{" "}
+            <a
+              href="https://github.com/pushkarydv/APIX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-700 font-medium"
+            >
+              Github
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );
