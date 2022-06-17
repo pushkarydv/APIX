@@ -1,5 +1,4 @@
 import React from "react";
-import Script from "next/script";
 function HeadComponent({ title }) {
   return (
     <>
@@ -27,7 +26,7 @@ function HeadComponent({ title }) {
       />{" "}
       <meta
         property="og:image"
-        content="https://apix.pushkaryadav.in/apix_banner.png"
+        content="https://apix.pushkaryadav.in/banner.png"
       />{" "}
       <meta property="twitter:card" content="summary_large_image" />{" "}
       <meta property="twitter:url" content="https://apix.pushkaryadav.in" />
@@ -38,7 +37,7 @@ function HeadComponent({ title }) {
       />
       <meta
         property="twitter:image"
-        content="https://apix.pushkaryadav.in/apix_banner.png"
+        content="https://apix.pushkaryadav.in/banner.png"
       />
       <link rel="icon" href="/logo.png" />
       {/* Google analitics */}
@@ -49,11 +48,11 @@ function HeadComponent({ title }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-7NHHPDZLXM',{ page_path: window.location.pathname });`,
+            gtag('config', 'G-7NHHPDZLXM',{ page_path: window.location.pathname });`,
         }}
       />
     </>
