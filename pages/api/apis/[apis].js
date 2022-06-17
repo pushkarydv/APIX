@@ -507,7 +507,7 @@ export default function handler(req, res) {
         ],
       });
       break;
-    case "artdesign":
+    case "artanddesign":
       res.status(200).json({
         data: [
           [
@@ -673,7 +673,7 @@ export default function handler(req, res) {
         ],
       });
       break;
-    case "authenticationauthorization":
+    case "authenticationandauthorization":
       res.status(200).json({
         data: [
           [
