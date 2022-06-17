@@ -9,6 +9,9 @@
 <br/>
 
 ## Website is Live : [apix.pushkaryadav.in](https://apix.pushkaryadav.in/)
+![image](https://user-images.githubusercontent.com/96358784/174392885-95afb826-bfc4-485d-86ba-423ec31c9255.png)
+
+![image](https://user-images.githubusercontent.com/96358784/174392709-47f0dc81-17e6-4ebc-bd93-0ca28a16c46a.png)
 
 # Features
 Everything you need to create an perfect app usimg these free apis 
