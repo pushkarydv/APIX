@@ -24,7 +24,6 @@ const Api = () => {
     <>
       <div>
         <Nav />
-
         <div className="flex flex-col">
           <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -68,7 +67,12 @@ const Api = () => {
                     {data.map(([name, link, desc, auth, https, cors]) => (
                       <tr className="border-b" key={name}>
                         <td className="text-gray-900 px-6 py-4 whitespace-nowrap">
-                          <a href={link} className="text-cyan-700 font-medium">
+                          <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-cyan-700 font-medium"
+                          >
                             {" "}
                             {name} &#10095;
                           </a>

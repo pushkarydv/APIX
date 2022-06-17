@@ -11,9 +11,9 @@ function ExploreHeader() {
           data-aos="zoom-out"
           data-aos-duration="200"
         >
-          Cateogories
+          API Cateogories
         </div>
-        <div className="w-[90%] md:w-[60%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%] mt-0 mx-auto">
+        <div className="w-[90%] md:w-[70%] lg:w-[60%] mt-0 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {Apis.map(([name, url]) => (
             <ApiBoxConatiner key={url} text={name} url={url} />
           ))}

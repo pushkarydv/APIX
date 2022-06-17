@@ -1,8 +1,8 @@
 import React from "react";
-
+import Script from "next/script";
 function HeadComponent({ title }) {
   return (
-    <div>
+    <>
       <meta charSet="UTF-8" />
       <title>{title}</title>
       <meta name="title" content="APIX" />
@@ -40,7 +40,22 @@ function HeadComponent({ title }) {
         property="twitter:image"
         content="https://apix.pushkaryadav.in/apix_banner.png"
       />
-    </div>
+      <link rel="icon" href="/logo.png" />
+      {/* Google analitics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-7NHHPDZLXM"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7NHHPDZLXM');
+        `}
+      </Script>
+    </>
   );
 }
 
