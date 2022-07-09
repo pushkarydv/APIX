@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Head from "next/head";
+import Broadcast from "../components/Broadcast";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init();
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
 
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
+      <Broadcast />
       <Component {...pageProps} />
     </>
   );
